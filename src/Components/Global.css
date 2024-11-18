@@ -1,0 +1,73 @@
+:root {
+    /* Variables for colors and transitions */
+    --main-transition: 0.3s; /* Default transition time */
+    --primary: #F25551; /* Main primary color */
+    --secondary-200: #FEEDE1; /* Light secondary color */
+    --secondary-100: #FFFBFF; /* Secondary color for background */
+    --green-gradient: #50F283; /* Green gradient color */
+    --dark-900: #241722; /* Very dark color */
+    --dark-800: #352432; /* Less dark color */
+    --dark-700: #462730; /* Slightly lighter dark color */
+    --dark-600: #632329; /* Dark red color */
+}
+
+/* Button with hover effect */
+.button-hover {
+    cursor: pointer; /* Change cursor to pointer */
+    transition: var(--main-transition); /* Apply the transition effect */
+    padding: 5px 10px; /* Padding inside the button */
+}
+
+.button-hover:hover {
+    background-color: var(--dark-700); /* Change background color on hover */
+    border-radius: 40px; /* Round the corners */
+}
+
+/* List item with hover effect */
+.list {
+    background-color: var(--dark-700); /* List item background color */
+    transition: var(--main-transition); /* Apply transition effect */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.list:hover {
+    background-color: var(--dark-800); /* Change background color when hovering */
+}
+
+/* Trash icon with hover effect */
+.trash {
+    color: var(--secondary-200); /* Trash icon color */
+    transition: var(--main-transition); /* Apply transition effect */
+}
+
+.trash:hover {
+    color: var(--dark-600); /* Change trash icon color on hover */
+}
+
+/* Style for the horizontal line after the nav */
+nav::after {
+    content: ''; /* Empty content to create a line */
+    width: 100%; /* Full width */
+    height: 1px; /* 1px height */
+    background-color: var(--secondary-100); /* Line color */
+    position: absolute; /* Position it absolutely */
+    left: 50%; /* Center it horizontally */
+    bottom: 40px; /* Position it 40px from the bottom */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+}
+
+/* Styles for the choose-list container */
+.choose-list {
+    background-color: var(--dark-900); /* Dark background color */
+}
+
+/* Style for the input fields */
+input {
+    background-color: #50F283; /* Green background for input */
+    color: #241722; /* Dark text color */
+    padding: 20px; /* Add padding inside the input */
+}
+
+input:checked {
+    background-color: #50F283; /* Keep the same green background when checked */
+}
